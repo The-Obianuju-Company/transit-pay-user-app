@@ -12,9 +12,12 @@
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^18",
+    "@vueuse/core": "^10.1.2",
+    "@vueuse/nuxt": "^10.1.2",
     "nuxt": "^3.5.1"
   },
   "dependencies": {
-    "daisyui": "^2.52.0"
+    "daisyui": "^2.52.0",
+    "vue3-qr-reader": "^1.0.0"
   }
 }

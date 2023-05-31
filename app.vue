@@ -12,7 +12,10 @@
 const colorMode = useColorMode();
 
 onMounted(() => {
+  setTimeout(() => {
   colorMode.preference = "corporate";
+
+  },1000)
 })
 
 </script>

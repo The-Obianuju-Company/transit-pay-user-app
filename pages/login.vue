@@ -16,24 +16,24 @@
           <span class="label-text-alt">required</span>
         </label>
         <input
-          type="text"
+          type="email"
           placeholder="Type here"
           class="input input-bordered w-full"
         />
       </div>
       <div class="form-control w-full">
         <label class="label">
-          <span class="label-text">Password?</span>
+          <span class="label-text">Password</span>
           <span class="label-text-alt">required</span>
         </label>
         <input
-          type="text"
+          type="password"
           placeholder="Type here"
           class="input input-bordered w-full"
         />
       </div>
       <div class="form-control w-full mt-3">
-        <button class="btn bg-yellow-400">Submit</button>
+        <button @click="router.push('/dashboard')" class="btn bg-yellow-400">Submit</button>
       </div>
 
       <div class="divider">OR login with</div>
@@ -46,7 +46,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+const router = useRouter();
+</script>
 
 <style scoped>
 .bg-gradient {
