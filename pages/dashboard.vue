@@ -2,7 +2,8 @@
     <div>
         <h1>Morning Face</h1>
         <p>{{text}}</p>
-        <QrStream @decode="onDecode($event)" class="pb"></QrStream>
+        <button @click="show = true" class="btn btn-primary">Open QrStream</button>
+        <QrStream v-if="show" @decode="onDecode($event)" class="pb"></QrStream>
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import { QrStream } from 'vue3-qr-reader';
 // const camera = usePermission('camera')
 
 const text = ref("")
+const show = ref(false)
  function onDecode(e){
     console.log(e);
     text.value = e;
